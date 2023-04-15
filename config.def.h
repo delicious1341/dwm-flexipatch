@@ -495,6 +495,7 @@ static const Rule rules[] = {
 //	RULE(.class = "Firefox", .tags = 1 << 7)
 	RULE(.class = "St", .isterminal = 1)
 	RULE(.class = "librewolf-default", .tags = 1 << 4)
+	RULE(.class = "Zathura", .noswallow = 1)
 	#if RENAMED_SCRATCHPADS_PATCH
 	RULE(.instance = "spterm", .scratchkey = 's', .isfloating = 1)
 	#elif SCRATCHPADS_PATCH
