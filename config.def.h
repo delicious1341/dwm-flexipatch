@@ -156,9 +156,9 @@ static void (*bartabmonfns[])(Monitor *) = { NULL /* , customlayoutfn */ };
 #if BAR_PANGO_PATCH
 static const char font[]                 = "monospace 10";
 #else
-static const char *fonts[]               = { "JetBrainsMono Nerd Font Mono:style=Regular:pixelsize=20" };
+static const char *fonts[]               = { "JetBrains Mono:pixelsize=20",FontAwesome:autohint=true" };
 #endif // BAR_PANGO_PATCH
-static const char dmenufont[]            = "JetBrainsMono Nerd Font Mono:style=Regular:pixelsize=20";
+static const char dmenufont[]            = "JetBrains Mono:pixelsize=20";
 
 static char c000000[]                    = "#000000"; // placeholder value
 
@@ -443,7 +443,7 @@ static char tagicons[][NUMTAGS][MAX_TAGLEN] =
 static char *tagicons[][NUMTAGS] =
 #endif // NAMETAG_PATCH
 {
-	[DEFAULT_TAGS]        = { "", "", "", "", "󰻏" },
+	[DEFAULT_TAGS]        = { "", "", "", "", "" },
 	[ALTERNATIVE_TAGS]    = { "A", "B", "C", "D", "E" },
 	[ALT_TAGS_DECORATION] = { "<1>", "<2>", "<3>", "<4>", "<5>" },
 };
